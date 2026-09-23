@@ -1,0 +1,55 @@
+.number_con {
+  min-height: 300px;
+  /* ไล่เฉดสีตามธีมหลัก */
+  background: linear-gradient(135deg, #083fb6 0%, #120e42 50%, #0d08a1 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  & .number_items {
+    color: #fff;
+    margin: 0 40px;
+
+    & h3 {
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      /* ข้อความตัวเลขไล่เฉดสีฟ้า-ม่วง */
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .number_con {
+    height: auto;
+    flex-direction: column;
+    padding: 60px 0;
+
+    & .number_items {
+      margin: 24px 0;
+
+      & h3 {
+        font-size: 42px;
+      }
+
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+}
